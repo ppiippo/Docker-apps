@@ -18,7 +18,7 @@ RUN tar xf spark-1.1.0.tgz && rm -f spark-1.1.0.tgz
 
 #build spark
 WORKDIR /opt/spark-1.1.0
-#RUN ./sbt/sbt assembly
+RUN ./sbt/sbt assembly
 
 ##RUN apt-get update -y && apt-get install -qqy python scala
 
