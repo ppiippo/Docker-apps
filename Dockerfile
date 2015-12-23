@@ -11,7 +11,8 @@ MAINTAINER Pasi Piippo  "pp@cmpy.com"
 ENV REFRESHED_AT 22.12.2015-13:00
 
 # get spark
-RUN apt-get update -qqy && apt-get install -qqy wget git default-jdk
+RUN apt-get update -qqy && apt-get install -qqy wget git oracle-java7-installer
+## default-jdk
 WORKDIR /opt
 RUN wget -q http://d3kbcqa49mib13.cloudfront.net/spark-1.1.0.tgz
 RUN tar xf spark-1.1.0.tgz && rm -f spark-1.1.0.tgz
